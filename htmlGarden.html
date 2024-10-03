@@ -3,17 +3,19 @@
         <title>Gabby</title>
         <style>
             body{
-                background: black;
-                color: white;
+                background: grey;
+                color: rgb(0, 0, 0);
                 font-size:40px;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 font-weight: 600;
+                filter: hue-rotate(45deg);
             }
 
             food{
                 color: orange;
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 /* display: block; */
+                /* background: white; */
             }
 
             artists{
@@ -34,6 +36,18 @@
             place{
                 color: blueviolet;
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            .experiment{
+                background:blue;
+                transform:rotate(20deg) scale(2) translate(60px, 60px);
+                filter: blur(8px) saturate(.6);
+                /* filter: hue-rotate(50deg); */
+                opacity: .8;
+                mix-blend-mode: multiply;
+                display: block;
+                transition: all 1s;
+                
             }
 
         
@@ -90,5 +104,6 @@
             <Country>Dominican Republic,</Country>
             <Country>Puerto Rico</Country>
         </place>
+        <div class='experiment'>Hi</div>
     </body>
 </html>
